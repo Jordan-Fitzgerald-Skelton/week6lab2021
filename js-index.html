@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+  <link rel="stylesheet" href="javalabstyle/javalabstyle1.css" />
+</head>
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello World!</h1>"); //using HTML tags
+
+		//this is a var declare and value assigned
+		var name = prompt("Enter your name", "");
+    //asks for the users age
+    var age = prompt("Enter your age", "");
+    //asks for the college the user attends
+    var college = prompt("Enter your college", "");
+    //asks the user to enter a number
+    var num1 = prompt("Enter a number", "");
+    //asks the user to enter a number
+    var num2 = prompt("Enter a second number", "");
+    var numInt1 =parseInt(num1);
+    var numInt2 =parseInt(num2);
+    //multiplies the numbers
+    var mul1 = num1 * num2;
+    //divides the numbera
+    var div = num1 / num2;
+
+
+    document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+    //if and else statement for age
+  if (age < 18){
+    document.write("<br>you are a child")
+  } else {
+    document.write("<br>You are old")
+  }
+
+  //if and else statement for college
+  if (college = "NCI"){
+    document.write("<br> Well done, you made the right choice")
+  }else{
+    document.write("<br>", + college + "is terriable")
+  }
+
+  document.write("<br>multiply answer =" + mul1);
+  document.write("<br>division answer =" + div);
+
+	</script>
+  <body>
+        <!--creates a button that will show the time and date-->
+        <br><button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+  <p id="demo"></p>
+	<a href="page2.html">Page 2</a>
+
+<img src="pic5.png" alt="stone pillars by the sea">
+  </body>
+</html>
